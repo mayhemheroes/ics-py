@@ -1,0 +1,9 @@
+project: ics-py
+target: fuzz-ics
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_ics.py
+    libfuzzer: true
+    timeout: 12
